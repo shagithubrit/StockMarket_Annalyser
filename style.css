@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgb(1, 1, 41);
+    color: white;
+  }
+
+  #header{
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  
+  canvas {
+    /* border: 1px solid #ccc; */
+  }
+  .chart-container {
+    position: relative;
+    
+  }
+  .chart-tooltip {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: rgb(1, 1, 69);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  .x-axis-label {
+    position: absolute;
+    bottom: -20px;
+    font-size: 10px;
+    color: #888;
+  }
+  #stock-chart{
+    /* background-color: rgb(34, 34, 34); */
+    background-color: rgb(1, 1, 69);
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 10px;
+    padding-top: 20px;
+    /* border: 2px solid transparent;
+  border-image: linear-gradient(to right, #f00, #0f0, #00f);
+  border-image-slice: 1;
+  animation: fade 5s infinite; */
+  }
+
+  #stock-chart button{
+    background-color: rgb(2, 2, 116);
+    /* opacity: .7; */
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+
+  }
+  #chart-canvas{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  #stock-chart button:hover{
+    opacity: 1;
+    background-color: rgb(3, 3, 131);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    /* margin-right: 20px ; */
+  }
+  #summary{
+    margin-top: 20px;
+    width: 60%; 
+  }
+  #summary p{
+    font-size: 12px;
+    display: flex;
+justify-content: center;
+  }
+  #name{
+    /* font-weight: 100; */
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #profit{
+    /* font-weight: 100; */
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #bookValue{
+    /* font-weight: 100; */
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  #container{
+    display: flex;
+  }
+  #stock-list{
+    position: absolute;
+    right: 80px;
+  }
+  .list{
+    position: relative;
+    right: 0px;
+    height: 30px;
+    width: 60px;
+    /* padding: 10px; */
+    color: white;
+    justify-content: center;
+    align-items: center ;
+    margin: 5px;
+    border-radius: 5px;
+    /* padding-left: 30px; */
+    background-color: rgb(1, 1, 102);
+  }
+  .list:hover{
+    background-color: rgb(1, 1, 41);
+    cursor: pointer;
+  }
+  .list span{
+    margin-right: 10px ;
+  }
+  #button{
+    margin-top:30px ;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .list_i span{
+    margin: 10px;
+  }
